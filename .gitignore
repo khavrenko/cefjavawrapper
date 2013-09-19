@@ -1,0 +1,14 @@
+*.user
+*.exe
+*.class
+*.opensdf
+*.obj
+*.log
+*out*
+*Debug*
+*Release*
+*.sdf
+*.suo
+*.old
+native/ide/vc2008/CEFW/*
+*.ipch

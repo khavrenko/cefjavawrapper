@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Library Files">
+      <UniqueIdentifier>{b1cf0234-a3c3-4ad7-ad26-0417c9269fed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library Files\Debug">
+      <UniqueIdentifier>{5f2ffbf5-59e2-4da0-be7d-63b8a8e223c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library Files\Release">
+      <UniqueIdentifier>{5a6e1035-709c-4ea6-89ef-42d7943df2c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{b6222373-0fb1-4de2-8257-a1d48ab785db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\capi">
+      <UniqueIdentifier>{a914dedc-a86d-4ca1-9c6d-c60a72f15a9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal">
+      <UniqueIdentifier>{3eb44f27-3054-433c-b14f-3b5d089e2737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\wrapper">
+      <UniqueIdentifier>{6ea90a8d-984f-4e86-af4a-0e3374e55e09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cef3">
+      <UniqueIdentifier>{ecf8f1bd-ad11-4652-9d98-6bbbc57c8b2a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\CefBaseImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CefBrowser_N.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CefContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CefFrame_N.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SystemUtilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SystemUtilities_win.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CefV8Value_N.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CefV8HandlerImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client_handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\binding_test.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\cefclient.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\cefclient_osr_widget_win.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\cefclient_win.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\client_app.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\client_app_delegates.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\client_handler.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\client_handler_win.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\client_renderer.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\client_switches.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\dialog_test.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\dom_test.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\osrenderer.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\performance_test.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\performance_test_tests.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\resource_util_win.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\scheme_test.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\string_util.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\window_test.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\window_test_win.cpp">
+      <Filter>cef3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\client_app.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\CefBaseImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CefBrowser_mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SystemUtilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SystemUtilities_mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SystemUtilities_win.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CefContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CefV8Value_N.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CefV8HandlerImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CefBrowser_N.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BrowserHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client_handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CefFrame_N.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_app.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_base.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_browser.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_browser_process_handler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_callback.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_client.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_command_line.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_context_menu_handler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_cookie.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_dialog_handler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_display_handler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_dom.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_download_handler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_download_item.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_focus_handler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_frame.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_geolocation.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_geolocation_handler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_jsdialog_handler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_keyboard_handler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_life_span_handler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_load_handler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_menu_model.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_origin_whitelist.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_pack_resources.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_pack_strings.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_path_util.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_process_message.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_process_util.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_render_handler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_render_process_handler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_request.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_request_handler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_resource_bundle_handler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_resource_handler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_response.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_runnable.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_scheme.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_stream.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_string_visitor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_task.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_trace.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_trace_event.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_url.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_urlrequest.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_v8.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_values.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_version.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_web_plugin.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_xml_reader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_zip_reader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_app_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_base_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_browser_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_browser_process_handler_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_callback_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_client_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_command_line_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_context_menu_handler_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_cookie_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_dialog_handler_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_display_handler_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_dom_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_download_handler_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_download_item_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_focus_handler_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_frame_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_geolocation_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_geolocation_handler_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_jsdialog_handler_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_keyboard_handler_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_life_span_handler_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_load_handler_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_menu_model_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_origin_whitelist_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_path_util_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_process_message_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_process_util_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_render_handler_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_render_process_handler_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_request_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_request_handler_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_resource_bundle_handler_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_resource_handler_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_response_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_scheme_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_stream_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_string_visitor_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_task_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_trace_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_url_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_urlrequest_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_v8_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_values_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_web_plugin_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_xml_reader_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_zip_reader_capi.h">
+      <Filter>include\capi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_build.h">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_export.h">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_ptr.h">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_string.h">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_string_list.h">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_string_map.h">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_string_multimap.h">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_string_types.h">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_string_wrappers.h">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_time.h">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_tuple.h">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_types.h">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_types_win.h">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_types_wrappers.h">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_win.h">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\wrapper\cef_byte_read_handler.h">
+      <Filter>include\wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\wrapper\cef_stream_resource_handler.h">
+      <Filter>include\wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\wrapper\cef_xml_object.h">
+      <Filter>include\wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\include\wrapper\cef_zip_archive.h">
+      <Filter>include\wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\binding_test.h">
+      <Filter>cef3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\cefclient.h">
+      <Filter>cef3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\cefclient_osr_widget_win.h">
+      <Filter>cef3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\client_app.h">
+      <Filter>cef3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\client_handler.h">
+      <Filter>cef3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\client_renderer.h">
+      <Filter>cef3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\client_switches.h">
+      <Filter>cef3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\dialog_test.h">
+      <Filter>cef3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\dom_test.h">
+      <Filter>cef3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\osrenderer.h">
+      <Filter>cef3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\performance_test.h">
+      <Filter>cef3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\performance_test_setup.h">
+      <Filter>cef3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\resource.h">
+      <Filter>cef3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\resource_util.h">
+      <Filter>cef3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\scheme_test.h">
+      <Filter>cef3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\string_util.h">
+      <Filter>cef3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\util.h">
+      <Filter>cef3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\window_test.h">
+      <Filter>cef3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\client_app.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="..\..\cef_binary_2013\cefclient\Desktop.lnk">
+      <Filter>cef3</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="..\..\cef_binary\lib\Debug2008\libcef.lib">
+      <Filter>Library Files\Debug</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\cef_binary\lib\Debug2008\libcef_dll_wrapper.lib">
+      <Filter>Library Files\Debug</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\cef_binary_2013\lib\libcef.lib">
+      <Filter>Library Files\Release</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\cef_binary_2013\lib\libcef_dll_wrapper.lib">
+      <Filter>Library Files\Release</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\cef_binary_2013\cefclient\cefclient.rc">
+      <Filter>cef3</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

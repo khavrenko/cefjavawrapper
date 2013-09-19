@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="CEFW|Win32">
+      <Configuration>CEFW</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CEFDE17E-4607-4A3A-9680-ADE0662785B4}</ProjectGuid>
+    <RootNamespace>CefWrapper</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CEFW|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='CEFW|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\java\lib\native\win32\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='CEFW|Win32'">..\..\..\java\lib\native\win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='CEFW|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='CEFW|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\java\lib\native\win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../cef_binary_2013/include;../../cef_binary_2013/;../../cef_binary_2013/cefclient/;C:/Program Files (x86)/Java/jdk1.6.0/include;C:/Program Files (x86)/Java/jdk1.6.0/include/win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WIN32_WINNT=0x0602;WINVER=0x0602;WIN32;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_HAS_EXCEPTIONS=0;_SECURE_ATL;CHROMIUM_BUILD;TOOLKIT_VIEWS=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_REMOTING=1;ENABLE_WEBRTC=1;ENABLE_PEPPER_THREADING;ENABLE_CONFIGURATION_POLICY;ENABLE_INPUT_SPEECH;ENABLE_NOTIFICATIONS;ENABLE_GPU=1;ENABLE_EGLIMAGE=1;USE_SKIA=1;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06020000;ENABLE_TASK_MANAGER=1;ENABLE_WEB_INTENTS=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_BACKGROUND=1;ENABLE_AUTOMATION=1;ENABLE_GOOGLE_NOW=1;ENABLE_LANGUAGE_DETECTION=1;ENABLE_PRINTING=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_SETTINGS_APP=1;USING_CEF_SHARED;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ExceptionHandling>false</ExceptionHandling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <DisableSpecificWarnings>4351;4396;4503;4819;4100;4121;4125;4127;4130;4131;4189;4201;4238;4244;4245;4310;4355;4428;4481;4505;4510;4512;4530;4610;4611;4701;4702;4706;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>/MP /we4389 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>../../cef_binary_2013/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;comctl32.lib;shlwapi.lib;rpcrt4.lib;opengl32.lib;glu32.lib;libcef.lib;libcef_dll_wrapper.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/safeseh /dynamicbase /ignore:4199 /ignore:4221 /nxcompat %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='CEFW|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../cef_binary_2013/include;../../cef_binary_2013/;../../cef_binary_2013/cefclient/;C:/Program Files (x86)/Java/jdk1.6.0/include;C:/Program Files (x86)/Java/jdk1.6.0/include/win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;CEFWRAPPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>../../cef_binary_2013/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcef.lib;libcef_dll_wrapper.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../../cef_binary_2013/include;../../cef_binary_2013/;../../cef_binary_2013/cefclient/;C:/Program Files (x86)/Java/jdk1.6.0/include;C:/Program Files (x86)/Java/jdk1.6.0/include/win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CEFWRAPPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <StringPooling>
+      </StringPooling>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>../../cef_binary_2013/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;opengl32.lib;glu32.lib;libcef.lib;libcef_dll_wrapper.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\binding_test.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\cefclient.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\cefclient_osr_widget_win.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\cefclient_win.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\client_app.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\client_app_delegates.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\client_handler.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\client_handler_win.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\client_renderer.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\client_switches.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\dialog_test.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\dom_test.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\osrenderer.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\performance_test.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\performance_test_tests.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\resource_util_win.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\scheme_test.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\string_util.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\window_test.cpp" />
+    <ClCompile Include="..\..\cef_binary_2013\cefclient\window_test_win.cpp" />
+    <ClCompile Include="..\..\src\CefBaseImpl.cpp" />
+    <ClCompile Include="..\..\src\CefBrowser_N.cpp" />
+    <ClCompile Include="..\..\src\CefContext.cpp" />
+    <ClCompile Include="..\..\src\CefFrame_N.cpp" />
+    <ClCompile Include="..\..\src\CefV8HandlerImpl.cpp" />
+    <ClCompile Include="..\..\src\CefV8Value_N.cpp" />
+    <ClCompile Include="..\..\src\client_app.cpp" />
+    <ClCompile Include="..\..\src\client_handler.cpp" />
+    <ClCompile Include="..\..\src\SystemUtilities.cpp" />
+    <ClCompile Include="..\..\src\SystemUtilities_win.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\binding_test.h" />
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\cefclient.h" />
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\cefclient_osr_widget_win.h" />
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\client_app.h" />
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\client_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\client_renderer.h" />
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\client_switches.h" />
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\dialog_test.h" />
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\dom_test.h" />
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\osrenderer.h" />
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\performance_test.h" />
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\performance_test_setup.h" />
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\resource.h" />
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\resource_util.h" />
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\scheme_test.h" />
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\string_util.h" />
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\util.h" />
+    <ClInclude Include="..\..\cef_binary_2013\cefclient\window_test.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_app_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_base_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_browser_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_browser_process_handler_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_callback_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_client_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_command_line_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_context_menu_handler_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_cookie_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_dialog_handler_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_display_handler_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_dom_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_download_handler_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_download_item_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_focus_handler_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_frame_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_geolocation_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_geolocation_handler_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_jsdialog_handler_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_keyboard_handler_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_life_span_handler_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_load_handler_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_menu_model_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_origin_whitelist_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_path_util_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_process_message_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_process_util_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_render_handler_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_render_process_handler_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_request_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_request_handler_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_resource_bundle_handler_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_resource_handler_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_response_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_scheme_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_stream_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_string_visitor_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_task_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_trace_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_urlrequest_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_url_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_v8_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_values_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_web_plugin_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_xml_reader_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\capi\cef_zip_reader_capi.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_app.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_base.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_browser.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_browser_process_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_callback.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_client.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_command_line.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_context_menu_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_cookie.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_dialog_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_display_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_dom.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_download_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_download_item.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_focus_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_frame.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_geolocation.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_geolocation_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_jsdialog_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_keyboard_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_life_span_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_load_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_menu_model.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_origin_whitelist.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_pack_resources.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_pack_strings.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_path_util.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_process_message.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_process_util.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_render_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_render_process_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_request.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_request_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_resource_bundle_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_resource_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_response.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_runnable.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_scheme.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_stream.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_string_visitor.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_task.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_trace.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_trace_event.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_url.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_urlrequest.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_v8.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_values.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_version.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_web_plugin.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_xml_reader.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\cef_zip_reader.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_build.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_export.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_ptr.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_string.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_string_list.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_string_map.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_string_multimap.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_string_types.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_string_wrappers.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_time.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_tuple.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_types.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_types_win.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_types_wrappers.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\internal\cef_win.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\wrapper\cef_byte_read_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\wrapper\cef_stream_resource_handler.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\wrapper\cef_xml_object.h" />
+    <ClInclude Include="..\..\cef_binary_2013\include\wrapper\cef_zip_archive.h" />
+    <ClInclude Include="..\..\src\CefBaseImpl.h" />
+    <ClInclude Include="..\..\src\CefBrowser_mac.h" />
+    <ClInclude Include="..\..\src\CefBrowser_N.h" />
+    <ClInclude Include="..\..\src\CefContext.h" />
+    <ClInclude Include="..\..\src\CefFrame_N.h" />
+    <ClInclude Include="..\..\src\CefV8HandlerImpl.h" />
+    <ClInclude Include="..\..\src\CefV8Value_N.h" />
+    <ClInclude Include="..\..\src\client_app.h" />
+    <ClInclude Include="..\..\src\client_handler.h" />
+    <ClInclude Include="..\..\src\SystemUtilities.h" />
+    <ClInclude Include="..\..\src\SystemUtilities_mac.h" />
+    <ClInclude Include="..\..\src\SystemUtilities_win.h" />
+    <ClInclude Include="BrowserHandle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="..\..\cef_binary\lib\Debug2008\libcef.lib">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\cef_binary\lib\Debug2008\libcef_dll_wrapper.lib">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\cef_binary_2013\lib\libcef.lib">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CEFW|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\cef_binary_2013\lib\libcef_dll_wrapper.lib">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CEFW|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\cef_binary_2013\cefclient\Desktop.lnk" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\cef_binary_2013\cefclient\cefclient.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
